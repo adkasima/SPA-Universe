@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --heading-color: #FFFFFF;
+    --text-color: #E1E1E6;
+    --bg-img1: url(/images/mountains1.png);
+    --bg-img2: url(/images/mountains2.png);
+    --bg-img3: url(/images/mountains3.png);
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: var(--heading-color);
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: var(--text-color);
+}
+
+body, html {
+    background-image: var(--bg-img1);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+
+    overflow-y: hidden;
+}
+
+header nav .menu{
+    display: flex;
+    gap: 3.2rem;
+    margin-top: 4rem;
+    margin-left: 7.2rem;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+header nav img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+header nav a:hover{
+    color: #6565ee;
+    transition: color 0.5s;
+}
+
+main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    align-items: center;   
+    margin-top: 18rem;
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    margin-top: 6.3rem;
+    margin-left: 10.2rem;
+    height: 20.3rem;
+    width: 64.8rem;
+
+}
+
+
+
+main .content button {
+    width: 195px;
+    height: 48px;
+
+    font-weight: 700;
+
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+main .content button:hover {
+    background-color: var(--text-color);
+    color: #6565ee;
+    border: none;
+    transition: color 1s;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(30rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+        @keyframes go-upper {
+    0% {
+        transform: translateY(10rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+        @keyframes color-transition {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+            
+}
