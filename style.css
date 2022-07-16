@@ -8,9 +8,9 @@
     font-size: 62.5%;
     --heading-color: #FFFFFF;
     --text-color: #E1E1E6;
-    --bg-img1: url(/images/mountains1.png);
-    --bg-img2: url(/images/mountains2.png);
-    --bg-img3: url(/images/mountains3.png);
+    --bg-img1: url(./images/mountains1.png);
+    --bg-img2: url(./images/mountains2.png);
+    --bg-img3: url(./images/mountains3.png);
 }
 
 h1 {
